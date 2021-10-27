@@ -31,4 +31,8 @@ let saida = true;
         saida: false
     }
 
-    if(norte.entrada == false)
+    const combinacaoUm = [];
+
+    if(norte.entrada == false && sul.saida == false || sudeste.saida || centroOeste.saida == false || nordeste.saida == false || norte.saida == false){
+        combinacaoUm.push(norte.entrada == true);
+    }
